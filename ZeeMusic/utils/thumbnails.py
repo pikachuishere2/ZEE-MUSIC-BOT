@@ -6,7 +6,7 @@ import logging
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 from youtubesearchpython.__future__ import VideosSearch
 from config import YOUTUBE_IMG_URL
-from AnonMusic import app
+from ZeeMusic import app
 
 # Logging Setup
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
