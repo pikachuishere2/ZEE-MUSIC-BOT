@@ -22,7 +22,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 999999))
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1003072931688"))
 
 # Get this value from @MissRose_Bot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "7804917014"))
+OWNER_ID = int(getenv("OWNER_ID", "8383747125"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -59,7 +59,7 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "293c334a2861415197a697b
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
-PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25000))
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 999999))
 
 
 # Telegram audio and video file size limit (in bytes)
@@ -121,6 +121,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 
