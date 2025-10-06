@@ -53,7 +53,7 @@ async def sudoers_list(client, message: Message):
     keyboard = [[InlineKeyboardButton("❍ ᴠɪᴇᴡ sᴜᴅᴏʟɪsᴛ ❍", callback_data="check_sudo_list")]]
     reply_markups = InlineKeyboardMarkup(keyboard)
   
-    await message.reply_photo(photo="https://files.catbox.moe/u0y9u5.jpg", caption="**» ᴄʜᴇᴄᴋ sᴜᴅᴏ ʟɪsᴛ ʙʏ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ.**\n\n**» ɴᴏᴛᴇ:**  ᴏɴʟʏ sᴜᴅᴏ ᴜsᴇʀs ᴄᴀɴ ᴠɪᴇᴡ. ", reply_markup=reply_markups)
+    await message.reply_photo(photo="https://files.catbox.moe/u0y9u5.jpg", caption="<b>» ᴄʜᴇᴄᴋ sᴜᴅᴏ ʟɪsᴛ ʙʏ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ.\n\n» ɴᴏᴛᴇ:  ᴏɴʟʏ sᴜᴅᴏ ᴜsᴇʀs ᴄᴀɴ ᴠɪᴇᴡ. </b>", reply_markup=reply_markups)
     
 
 @app.on_callback_query(filters.regex("^check_sudo_list$"))
@@ -109,4 +109,5 @@ async def del_all_sudo(client, message: Message, _):
                 SUDOERS.remove(user_id)
                 count -= 1
     await message.reply_text(f"Removed {count} users from the sudo list.")
+
 
