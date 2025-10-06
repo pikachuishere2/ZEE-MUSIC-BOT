@@ -16,7 +16,7 @@ import random
 import logging
 import aiohttp
 import config
-from config import BASE_API_URL, API_KEY
+from config import API_URL, VIDEO_API_URL, API_KEY
 
 
 def cookie_txt_file():
@@ -40,7 +40,7 @@ async def download_song(link: str):
             #print(f"File already exists: {file_path}")
             return file_path
         
-    song_url = f"{BASE_API_URL}/song/{video_id}?api={API_KEY}"
+    song_url = f"{API_URL}/song/{video_id}?api={API_KEY}"
     async with aiohttp.ClientSession() as session:
         for attempt in range(10):
             try:
@@ -102,7 +102,7 @@ async def download_video(link: str):
         if os.path.exists(file_path):
             return file_path
         
-    video_url = f"{BASE_API_URL}/video/{video_id}?api={API_KEY}"
+    video_url = f"{VIDEO_API_URL}/video/{video_id}?api={API_KEY}"
     async with aiohttp.ClientSession() as session:
         for attempt in range(10):
             try:
@@ -596,4 +596,3 @@ class YouTubeAPI:
             direct = True
             downloaded_file = await download_song(link)
         return downloaded_file, direct
-
