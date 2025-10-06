@@ -83,6 +83,9 @@ votemode = {}
 autoclean = []
 confirmer = {}
 
+STREAMI_PICS = [
+"https://files.catbox.moe/l8av1c.mp4",
+]
 
 START_IMG_URL = getenv(
     "START_IMG_URL", "https://files.catbox.moe/frm33t.jpg"
@@ -100,6 +103,11 @@ YOUTUBE_IMG_URL = "https://files.catbox.moe/u0y9u5.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/3deynn.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/3deynn.jpg"
 SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/3deynn.jpg"
+
+GREET = [
+    "💞", "🔍", "🧪", "🥂", "🔥", "🎩", "🍷", "🥃",
+    "🦋", "🕊️", "⚡️", "💌", "🥂", "🧨"
+]
 
 
 def time_to_seconds(time):
@@ -121,6 +129,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 
