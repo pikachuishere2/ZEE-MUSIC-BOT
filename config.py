@@ -19,10 +19,10 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://sarwarinisha30_db_user:sarw
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 999999))
 
 # Chat id of a group for logging bot's activities
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1003072931688"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002417142493"))
 
 # Get this value from @MissRose_Bot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "8457068373"))
+OWNER_ID = int(getenv("OWNER_ID", "8315954262"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -30,9 +30,8 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') #youtube song url
-VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
-API_KEY = getenv("API_KEY", "30DxNexGenBots121b50")
+BASE_API_URL = getenv("BASE_API_URL", 'https://tnc-api.me/api/v1')
+API_KEY = getenv("API_KEY", "tnc_9a13260003bfaa27f9432cd47c0491bb")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
@@ -44,7 +43,7 @@ GIT_TOKEN = getenv(
 )  # Fill this variable if your upstream repository is private
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TechNodeCoders")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/ThePookieWorld")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/TNCmeetup")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -85,21 +84,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/exw839.jpg"
+    "START_IMG_URL", "https://files.catbox.moe/frm33t.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/ddkc5f.jpg"
+    "PING_IMG_URL", "https://files.catbox.moe/375usn.jpg"
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/3v8uls.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/2nw6zu.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/3v8uls.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/dkn1xh.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/dkn1xh.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/dkn1xh.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/dkn1xh.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/dkn1xh.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/dkn1xh.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/dkn1xh.jpg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/rnl0mz.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/frm33t.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/rnl0mz.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/rnl0mz.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/u0y9u5.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/u0y9u5.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/u0y9u5.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/3deynn.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/3deynn.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/3deynn.jpg"
 
 
 def time_to_seconds(time):
@@ -121,6 +120,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 
