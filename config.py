@@ -14,7 +14,7 @@ API_HASH = getenv("API_HASH", "d6186691704bd901bdab275ceaab88f3")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://sarwarinisha30_db_user:sarwarinisha30@cluster0.obmwzqs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://ComatozzeMusic_xBot:Comatozze@comatozzemusic.izdpbmo.mongodb.net/?retryWrites=true&w=majority&appName=ComatozzeMusic")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 999999))
 
@@ -120,6 +120,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 
