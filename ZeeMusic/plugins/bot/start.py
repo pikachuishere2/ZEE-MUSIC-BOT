@@ -26,6 +26,12 @@ from ZeeMusic.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS, STREAMI_PICS, GREET
 from strings import get_string
 
+EFFECT_ID = [
+    5046509860389126442,
+    5107584321108051014,
+    5104841245755180586,
+    5159385139981059251,
+]
 
 @app.on_message(filters.command(["start"]) & filters.private & ~BANNED_USERS)
 @LanguageStart
@@ -52,6 +58,7 @@ async def start_pm(client, message: Message, _):
                 random.choice(STREAMI_PICS),
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
+                message_effect_id=random.choice(EFFECT_ID),
             )
         if name[0:3] == "sud":
             await sudoers_list(client=client, message=message, _=_)
@@ -165,3 +172,4 @@ async def welcome(client, message: Message):
                 await message.stop_propagation()
         except Exception as ex:
             print(ex)
+
